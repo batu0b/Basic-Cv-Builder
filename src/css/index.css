@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+  html,
+  body,
+  #root {
+    @apply h-full min-h-screen  bg-slate-950;
+  }
+
+  .MasterDiv {
+    @apply min-h-screen  w-full flex justify-center
+    items-center;
+  }
+  .Container {
+    @apply min-w-[650px] min-h-[450px] max-w-[750px] flex flex-col gap-8 shadow-md pt-2 h-fit mt-0 mx-auto border-4  border-neon;
+  }
+  .Header {
+    @apply flex gap-3   overflow-x-auto border-b-2 justify-evenly items-center p-2;
+  }
+  .Body {
+    @apply flex flex-col gap-5 p-7 pt-0;
+  }
+  .Row {
+    @apply flex gap-5 justify-between;
+  }
+}
+
+@layer utilities {
+  /* Black Hole */
+
+  /* 
+     <div
+        onClick={() => navigate("/CreateResume")}
+        className="outerCircle z-10"
+      >
+        <div className="innerCircle cursor-pointer flex justify-center items-center text-white">
+          <div className="uppercase bg-purple">create your resume now</div>
+        </div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  */
+  /* .outerCircle {
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    height: 260px;
+    width: 260px;
+    animation: rotate 1.5s linear infinite;
+    border-radius: 50%;
+    position: relative;
+  }
+  .outerCircle span {
+    position: absolute;
+    height: 260px;
+    width: 260px;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 50%;
+  }
+  span:nth-child(1) {
+    filter: blur(5px);
+  }
+  span:nth-child(2) {
+    filter: blur(10px);
+  }
+  span:nth-child(3) {
+    filter: blur(25px);
+  }
+  span:nth-child(4) {
+    filter: blur(150px);
+  }
+  .innerCircle {
+    height: 240px;
+    width: 240px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    background: black;
+    border-radius: 50%;
+    z-index: 9;
+  }
+  @keyframes rotate {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  } */
+}
